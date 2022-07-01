@@ -21,4 +21,18 @@ public class C_Locators_excercise {
     driver.quit();
     }
 
+    @Test
+    public void findElementByName() {
+        WebDriver driver = getDriver();
+        WebElement movieTitle = driver.findElement(By.name("your-movie"));
+        driver.quit();
+        }
+
+    @Test
+    public void findByClassName() {
+        WebDriver driver = getDriver();
+        WebElement numbersRadioButtons = driver.findElement(By.className("number"));
+        driver.quit();
+    }
+
 }
